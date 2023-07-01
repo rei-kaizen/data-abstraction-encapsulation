@@ -35,12 +35,12 @@ def TestCar():
 
     for i in range(5):
         vroom.accelerate()
-        print(f"The {vroom._Car__year_model} {vroom._Car__make} current speed: {vroom.get_speed()} mph")
+        print(f"The {vroom._Car__year_model} {vroom._Car__make} current speed: {vroom.get_speed()} mph \U000021D1")
         time.sleep(1)
 
     for i in range(5):
         vroom.brake()
-        print(f"The {vroom._Car__year_model} {vroom._Car__make} current speed: {vroom.get_speed()} mph")
+        print(f"The {vroom._Car__year_model} {vroom._Car__make} current speed: {vroom.get_speed()} mph \U000021D3")
         time.sleep(1)
     
     print(f"The {vroom._Car__year_model} {vroom._Car__make} engine is shut off. \U0001F68F\U0001F696")
