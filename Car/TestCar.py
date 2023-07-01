@@ -9,26 +9,28 @@ def TestCar():
     vroom = Car(1980, "Ford Capri 2.8i")
     
     #red light
-    print("------------")
-    print("| \U0001F534 \U000026AB \U000026AB |  READY!")
-    print("------------")
+    print("-" * 12)
+    print("| \U0001F534 \U000026AB \U000026AB |  \033[31mREADY!\033[0m")
+    print("-" * 12)
     time.sleep(2)
     
     #yellow light
-    print("------------")
-    print("| \U000026AB \U0001F7E1 \U000026AB |  SET!")
-    print("------------")
+    print("-" * 12)
+    print("| \U000026AB \U0001F7E1 \U000026AB |  \033[93mSET!\033[0m")
+    print("-" * 12)
     time.sleep(2)
    
     #green light
-    print("------------")
-    print("| \U000026AB \U000026AB \U0001F7E2 |  GO!")
-    print("------------")
-    time.sleep(2)
-        
-    print("Vrooom Vrooomm Vrooommm \U0001F695\U0001F4A8")
+    print("-" * 12)
+    print("| \U000026AB \U000026AB \U0001F7E2 |  \033[32mGO!\033[0m")
+    print("-" * 12)
     time.sleep(2)
     
+    print()    
+    print("vrooom vrooomm .... " * 2 + " \U0001F695 \U0001F4A8")
+    time.sleep(2)
+    
+    print("\033[90m" + ("-" * 17 + "|")*2 + "-" * 17 + "\033[0m")
 
     for i in range(5):
         vroom.accelerate()
@@ -39,7 +41,8 @@ def TestCar():
         vroom.brake()
         print(f"The {vroom._Car__year_model} {vroom._Car__make} current speed: {vroom.get_speed()} mph")
         time.sleep(1)
-        
+    
     print(f"The {vroom._Car__year_model} {vroom._Car__make} engine is shut off. \U0001F68F\U0001F696")
+    print("\033[90m" + ("-" * 17 + "|")*2 + "-" * 17 + "\033[0m")
     
 TestCar()
