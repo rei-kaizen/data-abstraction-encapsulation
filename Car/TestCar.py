@@ -30,6 +30,7 @@ def TestCar():
     print("vrooom vrooomm .... " * 2 + " \U0001F695 \U0001F4A8")
     time.sleep(2)
     
+    #road string
     print("\033[90m" + ("-" * 17 + "|")*2 + "-" * 17 + "\033[0m")
 
     for i in range(5):
@@ -43,6 +44,8 @@ def TestCar():
         time.sleep(1)
     
     print(f"The {vroom._Car__year_model} {vroom._Car__make} engine is shut off. \U0001F68F\U0001F696")
+    
+    #road string
     print("\033[90m" + ("-" * 17 + "|")*2 + "-" * 17 + "\033[0m")
     
 TestCar()
