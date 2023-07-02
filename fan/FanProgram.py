@@ -24,22 +24,33 @@ class Fan:
     
     def get_speed(self):
         return self.__speed
+    
     def set_speed(self, speed):
-        self.__speed = speed
+        if 1 > speed > 3:
+            print("Invalid speed value. Speed should be in range of 1-3 'v' ")
+        else: 
+            self.__speed = speed
         return self
         
     def get_on(self):
         return self.__on
+    
     def set_on(self, on):
-        self.__on = on
+        if not isinstance(on, bool):
+            print("This attribute's value is invalid. Boolean values (True/False) are needed here *_* .")
+        else:    
+            self.__on = on
         return self
-        
+    
     def get_radius(self):
         return self.__radius
     def set_radius(self, radius):
-        self.__radius = radius
+        if radius <= 0:
+            print("Value for radius is invalid, it needs to be a positive number +.+")
+        else:
+            self.__radius = radius
         return self
-            
+           
     def get_color(self):
         return self.__color
     def set_color(self, color):
