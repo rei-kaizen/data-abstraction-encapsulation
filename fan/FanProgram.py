@@ -26,18 +26,25 @@ class Fan:
         return self.__speed
     def set_speed(self, speed):
         self.__speed = speed
+        return self
         
     def get_on(self):
         return self.__on
     def set_on(self, on):
         self.__on = on
+        return self
         
     def get_radius(self):
         return self.__radius
     def set_radius(self, radius):
         self.__radius = radius
-        
+        return self
+            
     def get_color(self):
         return self.__color
     def set_color(self, color):
         self.__color = color
+        return self
+    
+    def properties(self):
+        print(f"Speed: {self.get_speed()} | Power On: {self.get_on()} | Radius: {self.get_radius()} | Color: {self.get_color()}")

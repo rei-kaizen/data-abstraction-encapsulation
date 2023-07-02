@@ -6,9 +6,10 @@ from FanProgram import Fan
 
 def TestFan():
     Eureka = Fan(1, True, 10, "yellow")
-    print("EUREKA - Speed:", Eureka.get_speed(), "| Power On:",Eureka.get_on(), "| Radius:",Eureka.get_radius(), "| Color:",Eureka.get_color())
-
-    Hanabishi = Fan(2, False, 5)
-    print("HANABISHI - Speed:", Hanabishi.get_speed(), "| Power On:",Hanabishi.get_on(), "| Radius:",Hanabishi.get_radius(), "| Color:",Hanabishi.get_color())
-
+    print("Fan 1:")
+    Eureka.properties()
+    print()
+    print("Fan 2:")
+    Eureka.set_speed(1).set_on(False).set_radius(5).set_color("blue").properties()
+    
 TestFan()    
