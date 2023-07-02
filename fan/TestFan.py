@@ -6,10 +6,27 @@ from FanProgram import Fan
 
 def TestFan():
     Eureka = Fan(1, True, 10, "yellow")
-    print("Fan 1:")
+    print("I")
     Eureka.properties()
     print()
-    print("Fan 2:")
+    print("II")
     Eureka.set_speed(1).set_on(False).set_radius(5).set_color("blue").properties()
     
-TestFan()    
+TestFan()
+
+# ----OUTPUT----
+# I
+# ╔══════════════════════════════════════╗
+# ║              Eureka Fan              ║
+# ╠══════════════════════════════════════╣
+# ║     Speed: 1  |  Power On: True      ║
+# ║     Radius: 10  |  Color: yellow     ║
+# ╚══════════════════════════════════════╝
+
+# II
+# ╔══════════════════════════════════════╗
+# ║              Eureka Fan              ║
+# ╠══════════════════════════════════════╣
+# ║     Speed: 1  |  Power On: False     ║
+# ║      Radius: 5  |  Color: blue       ║
+# ╚══════════════════════════════════════╝    

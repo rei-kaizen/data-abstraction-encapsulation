@@ -27,7 +27,7 @@ class Fan:
     
     def set_speed(self, speed):
         if 1 > speed > 3:
-            print("Invalid speed value. Speed should be in range of 1-3 'v' ")
+            print("Invalid speed value. Speed should be 1(fast)/2(medium)/3(slow) 'v' ")
         else: 
             self.__speed = speed
         return self
@@ -58,4 +58,31 @@ class Fan:
         return self
     
     def properties(self):
-        print(f"Speed: {self.get_speed()} | Power On: {self.get_on()} | Radius: {self.get_radius()} | Color: {self.get_color()}")
+        border_length = 40  # Length of the border
+        fan_name = "Eureka Fan"  # Replace with the appropriate fan name
+
+        #top border line
+        top_border = "╔" + "═" * (border_length - 2) + "╗"
+
+        #fan name line
+        side_border1 = "║" + fan_name.center(border_length - 2) + "║"
+
+        # Create the separator line
+        separator = "╠" + "═" * (border_length - 2) + "╣"
+
+        # Get the fan properties
+        fan_deets1 = f"Speed: {self.get_speed()}  |  Power On: {self.get_on()}"
+        fan_deets2 = f"Radius: {self.get_radius()}  |  Color: {self.get_color()}"
+        side_border2 = "║" + fan_deets1.center(border_length - 2) + "║"
+        side_border3 = "║" + fan_deets2.center(border_length - 2) + "║"
+
+        # Create the bottom border line
+        bottom_border = "╚" + "═" * (border_length - 2) + "╝"
+
+        # Print the formatted output
+        print(top_border)
+        print(side_border1)
+        print(separator)
+        print(side_border2)
+        print(side_border3)
+        print(bottom_border)
