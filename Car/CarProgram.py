@@ -18,57 +18,62 @@ class Car:
 
 # The class should also have the following methods:
 
-# - accelerate()
-
-# The accelerate method should add 5 to the speed data attribute each time it is called.
+    # - accelerate()
+    # The accelerate method should add 5 to the speed data attribute each time it is called.
     def accelerate(self):
         self.__speed += 5
         
-# - brake()
-
-# The brake method should subtract 5 from the speed data attribute each time it is called.
+    # - brake()
+    # The brake method should subtract 5 from the speed data attribute each time it is called.
     def brake(self):
         self.__speed -= 5
 
-# - get_speed()
-
-# The get_speed method should return the current speed.
+    # - get_speed()
+    # The get_speed method should return the current speed.
     def get_speed(self):
         return self.__speed 
 
+    #display red traffic light
     def red_light(self):
         print("-" * 12)
         print("| \U0001F534 \U000026AB \U000026AB |  \033[31mREADY!\033[0m")
         print("-" * 12)
         time.sleep(2)
-    
+        
+    #display yellow traffic light
     def yellow_light(self):
         print("-" * 12)
         print("| \U000026AB \U0001F7E1 \U000026AB |  \033[93mSET!\033[0m")
         print("-" * 12)
         time.sleep(2)
-    
+        
+    #display green traffic light
     def green_light(self):
         print("-" * 12)
         print("| \U000026AB \U000026AB \U0001F7E2 |  \033[32mGO!\033[0m")
         print("-" * 12)
         time.sleep(2)
-    
+        
+    #display car sound effects:D
     def car_sfx(self):    
         print()    
         print("vrooom vrooomm .... " * 2 + " \U0001F695 \U0001F4A8")
         time.sleep(2)
     
+    #display a regular road surface
     def roadway(self):    
         print("\033[90m" + ("-" * 17 + "|")*2 + "-" * 17 + "\033[0m")
     
+    #put a note that car engine shut off at 0 mph
     def car_stop(self):
         print(f"The {self.__year_model} {self.__make}  engine is shut off. \U0001F68F\U0001F696")
-        
+    
+    #if at acceleration, output the current speed with upward arrow    
     def up_speed(self):
         print(f"The {self.__year_model} {self.__make} current speed: {self.get_speed()} mph \U000021D1")
         time.sleep(1)
-    
+        
+    #here provide an downward arrow to indicate the current speed is deceasing
     def down_speed(self):
         print(f"The {self.__year_model} {self.__make} current speed: {self.get_speed()} mph \U000021D3")
         time.sleep(1)

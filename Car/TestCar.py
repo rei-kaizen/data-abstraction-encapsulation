@@ -7,6 +7,8 @@ from CarProgram import Car
 def TestCar():
     vroom = Car(1980, "Ford Capri 2.8i")
     
+    #call the methods in order
+    
     vroom.red_light()
     vroom.yellow_light()
     vroom.green_light()
