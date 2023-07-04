@@ -1,7 +1,7 @@
 class Formatter:
     """This class is responsible for formatting and printing out a given fan's properties"""
     
-    def properties(fan):
+    def properties(self, fan):
         
         border_length = 40  # Length of the border
         

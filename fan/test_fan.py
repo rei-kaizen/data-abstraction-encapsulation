@@ -7,9 +7,8 @@ import pyfiglet
 # Display each object’s speed, radius, color, and on properties.
 
 def TestFan():
-
     formatter = Formatter()
-        
+
     #1ST Object
     Eureka = Fan(1, True, 10, "yellow")
     print(pyfiglet.figlet_format("1ST", "small"))
@@ -19,10 +18,7 @@ def TestFan():
     
     #2ND Object
     print(pyfiglet.figlet_format("2ND", "small"))
-    Eureka.set_speed(1)
-    Eureka.set_on(False)
-    Eureka.set_radius(5)
-    Eureka.set_color("blue")
+    Eureka.set_speed(1).set_on(False).set_radius(5).set_color("blue")
     formatter.properties(Eureka)
     
 TestFan()
