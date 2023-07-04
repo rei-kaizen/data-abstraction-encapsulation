@@ -3,15 +3,15 @@ class PetUI:
     def borders(self, text):
 
         border_length = 30 
-        title = "Pet Identification"
+        title = "Pet Identification \U0001F43E"
         border = "+" + "-" * (border_length - 2) + "+" 
         
-        header = "|" + title.center(border_length - 2) + "|"
+        header = "|" + title.center(border_length - 3) + "|"
         separator = "|" + "-" * (border_length - 2) + "|"
 
-        name = "| Name: " + text[0].ljust(border_length - 9) + "|"
-        type = "| Type: " + text[1].ljust(border_length - 9) + "|"
-        age = "| Age: " + text[2].ljust(border_length - 8) + "|"
+        name = "|" + "\033[31m Name: \033[0m" + text[0].ljust(border_length - 9) + "|"
+        type = "|" + "\033[31m Type: \033[0m" + text[1].ljust(border_length - 9) + "|"
+        age = "|" + "\033[31m Age: \033[0m" + text[2].ljust(border_length - 8) + "|"
 
         print(border)
         print(header)
