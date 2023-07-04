@@ -26,7 +26,10 @@ class Pet:
 # - set_animal_type()
 # This method assigns a value to the _ _animal_type field.
     def set_animal_type(self, animal_type):
-        self.__animal_type = animal_type
+        if animal_type.isnumeric():
+            print("I made the same mistake, and trust me, it makes me question my reading skills, so spare yourself the blunder and preserve your sanity.")
+        else:
+            self.__animal_type = animal_type
 
 # - get_animal_type()
 # This method returns the value of the _ _animal_type field.
