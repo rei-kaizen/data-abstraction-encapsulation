@@ -36,8 +36,11 @@ class Pet:
 # - set_age()
 # This method assigns a value to the _ _age field.
     def set_age(self, age):
-        self.__age = age
-           
+        if age <= 0:
+            print("Yeah age is just a number but it can't be negative ~~")
+        else:
+            self.__age = age
+            
 # - get_age()
 # This method returns the value of the _ _age field.   
     def get_age(self):
