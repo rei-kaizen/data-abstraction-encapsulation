@@ -35,9 +35,9 @@ https://github.com/rei-kaizen/data-abstraction-encapsulation/assets/111290781/5f
 -----
 
 This program allows you to have a pet identification card. You can input the pet's name, type, and age, and the program will generate an exquisite pet identification card with borders.  It consists of three programs:
-1. pet_program: Contains a `Pet` class with data attributes for name, animal type, and age, along with methods for setting and getting the values of these attributes.
-2. pet_ui: Defines a user interface class that generates a bordered layout for a pet identification card, with aligned text for the pet's name, type, and age.
-3. test_pet: This takes user input for a pet's name, type, and age, and displays the pet's identification with framings and elements.
+1. pet_program.py: Contains a `Pet` class with data attributes for name, animal type, and age, along with methods for setting and getting the values of these attributes.
+2. pet_ui.py: Defines a user interface class that generates a bordered layout for a pet identification card, with aligned text for the pet's name, type, and age.
+3. test_pet.py: This takes user input for a pet's name, type, and age, and displays the pet's identification with framings and elements.
 
 ![img](./demo/pet-d.png)
 
