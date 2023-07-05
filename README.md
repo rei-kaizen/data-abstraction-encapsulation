@@ -1,5 +1,5 @@
 # Data Abstraction and Encapsulation
-methods of interacting with and modifying protected data
+> methods of interacting with and modifying protected data
 
 ## 🐱‍💻Programming Practices 
 <details><summary><h3> 🎐 The Fan Program </h3></summary>
@@ -24,7 +24,7 @@ This program Program simulates a car and provides a user interface for controlli
 2. car_ui.py: Defines the `UI` class that provides a user interface with methods for displaying traffic lights, car sound effects, and a roadway.
 3. test_car.py: This demonstrates the usage of the `Car` class and the `UI` class. It creates a car object, simulates traffic lights, accelerates, brakes, and stops the car.
 
-**Card Demo** <br>
+**Car Demo** <br>
 
 https://github.com/rei-kaizen/data-abstraction-encapsulation/assets/111290781/5fa42945-f8e0-4d84-89b0-9767be065570
 
